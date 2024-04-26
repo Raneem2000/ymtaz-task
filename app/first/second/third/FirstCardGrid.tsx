@@ -121,8 +121,10 @@ const FirstCardGrid = () => {
             </div>
             <div className="flex flex-col justify-end items-end gap-2">
               <div className="flex justify-center">
-                {stars.map((star) => (
-                  <StarLight />
+                {stars.map((_, index) => (
+                  <div key={index}>
+                    <StarLight />
+                  </div>
                 ))}
               </div>
               <span className="text-sm">التقييم العام</span>

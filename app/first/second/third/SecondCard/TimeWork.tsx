@@ -20,8 +20,11 @@ const TimeWork = () => {
         <div className="mt-2 text-white bg-primary m-3 rounded-full">
           10:30 ص
         </div>
-        {timeWork.map((item) => (
-          <div className="mt-2 text-gray2 hover:text-white hover:bg-primary hover:m-3 hover:rounded-full">
+        {timeWork.map((item, index) => (
+          <div
+            key={index}
+            className="mt-2 text-gray2 hover:text-white hover:bg-primary hover:m-3 hover:rounded-full"
+          >
             {item.id}
           </div>
         ))}
@@ -31,8 +34,11 @@ const TimeWork = () => {
         <div className="mt-2 text-white bg-primary m-3 rounded-full">
           10:30 ص
         </div>
-        {timeWork.map((item) => (
-          <div className="mt-2 text-gray2 hover:text-white hover:bg-primary hover:m-3 hover:rounded-full">
+        {timeWork.map((item, index) => (
+          <div
+            key={index}
+            className="mt-2 text-gray2 hover:text-white hover:bg-primary hover:m-3 hover:rounded-full"
+          >
             {item.id}
           </div>
         ))}{" "}

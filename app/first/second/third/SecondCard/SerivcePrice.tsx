@@ -24,8 +24,11 @@ const SerivcePrice = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        data?.data.data.lawyer.services.map((service: Props) => (
-          <div className="bg-backGround mx-10 p-2 my-8 rounded shadow">
+        data?.data.data.lawyer.services.map((service: Props, index: number) => (
+          <div
+            key={index}
+            className="bg-backGround mx-10 p-2 my-8 rounded shadow"
+          >
             <div className="">
               <div className="flex justify-between items-center gap-1">
                 <div className="flex flex-col gap-2 w-44 ">
